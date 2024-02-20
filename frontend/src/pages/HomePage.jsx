@@ -1,4 +1,3 @@
-
 import { useCallback, useEffect, useState } from "react";
 import toast from "react-hot-toast";
 
@@ -15,7 +14,7 @@ const HomePage = () => {
 
 	const [sortType, setSortType] = useState("recent");
 
-	const getUserProfileAndRepos = useCallback(async (username = "sindhu") => {
+	const getUserProfileAndRepos = useCallback(async (username = "burakorkmez") => {
 		setLoading(true);
 		try {
 			const res = await fetch(`/api/users/profile/${username}`);
